@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff000000">
+
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#444444"
+        android:baselineAligned="true">
+
+        <TextView
+            android:id="@+id/editInfoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_5dp"
+            android:text="@string/edit_information_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/infoTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="@dimen/padding_5dp"
+            android:paddingLeft="@dimen/padding_5dp"
+            android:text="@string/info_type" />
+
+        <EditText
+            android:id="@+id/infoType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textCapWords"
+            android:paddingRight="@dimen/padding_5dp"
+            android:paddingLeft="@dimen/padding_5dp"
+            >
+
+            <requestFocus />
+        </EditText>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/NameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/padding_5dp"
+            android:paddingRight="@dimen/padding_5dp"
+            android:text="@string/Name_category" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text|textMultiLine|textLongMessage|textPersonName"
+            android:paddingRight="@dimen/padding_5dp"
+            android:paddingLeft="@dimen/padding_5dp">
+
+        </EditText>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/detailsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="@dimen/padding_5dp"
+            android:paddingLeft="@dimen/padding_5dp"
+            android:text="@string/details" />
+
+        <EditText
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textMultiLine|textLongMessage|textEmailAddress"
+            android:paddingRight="@dimen/padding_5dp"
+            android:paddingLeft="@dimen/padding_5dp">
+
+        </EditText>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/pitTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/padding_5dp"
+            android:paddingRight="@dimen/padding_5dp"
+            android:text="@string/point_in_time" />
+
+        <EditText
+            android:id="@+id/pit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:paddingRight="@dimen/padding_5dp"
+            android:paddingLeft="@dimen/padding_5dp"
+            android:inputType="text">
+
+        </EditText>
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:onClick="editInfo"
+            android:text="@string/save_button"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:onClick="removeInfo"
+            android:text="@string/delete_button"
+            android:layout_weight="1"/>
+
+
+    </TableRow>
+
+
+</TableLayout>

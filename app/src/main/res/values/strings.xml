@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Resume</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="add_info">Add Information</string>
+    <string name="info_type">Information Type</string>
+    <string name="Name_category">Title</string>
+    <string name="details">Details</string>
+    <string name="point_in_time">Duration</string>
+
+
+    <string name="Resume_title">About Me</string>
+    <string name="add_button">ADD</string>
+
+    <string name="save_data">Save</string>
+
+    <string name="edit_information_title">Edit Information</string>
+    <string name="save_button">Save</string>
+    <string name="edit_button">Edit</string>
+    <string name="delete_button">Delete</string>
+    <string name="view_info">View</string>
+
+</resources>

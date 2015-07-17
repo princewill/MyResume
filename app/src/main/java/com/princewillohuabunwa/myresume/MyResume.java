@@ -50,7 +50,7 @@ public class MyResume extends ListActivity {
 
         ArrayList<HashMap<String, String>> infoList =  dbTools.getAllInfo();
 
-        // Check to make sure there are contacts to display
+        // Check to make sure there are infos to display
 
         if(infoList.size()!=0) {
 
@@ -66,7 +66,7 @@ public class MyResume extends ListActivity {
 
                     infoId = (TextView) view.findViewById(R.id.infoId);
 
-                    // Convert that contactId into a String
+                    // Convert that infoId into a String
 
                     String infoIdValue = infoId.getText().toString();
 
@@ -76,11 +76,11 @@ public class MyResume extends ListActivity {
 
                     Intent theIntent = new Intent(getApplication(),EditInfo.class);
 
-                    // Put additional data in for EditContact to use
+                    // Put additional data in for EditInfo to use
 
                     theIntent.putExtra("infoId", infoIdValue);
 
-                    // Calls for EditContact
+                    // Calls for EditInfo
                     startActivity(theIntent);
                 }
             });
@@ -125,8 +125,8 @@ public class MyResume extends ListActivity {
         }
     }
 
-    // When showAddContact is called with a click the Activity
-    // NewContact is called
+    // When showAddinfo is called with a click the Activity
+    // NewInfo is called
 
     public void showAddInformation(View view) {
         Intent theIntent = new Intent(getApplication(), NewInfo.class);

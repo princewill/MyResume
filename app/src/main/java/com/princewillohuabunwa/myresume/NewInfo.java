@@ -32,7 +32,7 @@ public class NewInfo extends Activity{
 
         super.onCreate(savedInstanceState);
 
-        // Designate that add_new_contact.xml is the interface used
+        // Designate that add_new_info.xml is the interface used
 
         setContentView(R.layout.add_new_info);
 

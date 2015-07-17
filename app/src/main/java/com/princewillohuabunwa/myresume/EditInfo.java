@@ -35,7 +35,7 @@ public class EditInfo extends Activity{
 
         super.onCreate(savedInstanceState);
 
-        // Designate that edit_contact.xml is the interface used
+        // Designate that edit_info.xml is the interface used
 
         setContentView(R.layout.edit_information);
 
@@ -51,16 +51,16 @@ public class EditInfo extends Activity{
         Intent theIntent = getIntent();
 
         // Get the extended data provided to this activity
-        // putExtra("contactId", contactIdValue); in MainActivity
-        // will pass contactId here
+        // putExtra("infoId", infoIdValue); in MainActivity
+        // will pass infoId here
 
         String infoId = theIntent.getStringExtra("infoId");
 
-        // Get the HashMap of data associated with the contactId
+        // Get the HashMap of data associated with the infoId
 
         HashMap<String, String> infoList = dbTools.getInfo(infoId);
 
-        // Make sure there is something in the contactList
+        // Make sure there is something in theinfoList
 
         if(infoList.size()!=0) {
 
@@ -88,8 +88,8 @@ public class EditInfo extends Activity{
         Intent theIntent = getIntent();
 
         // Get the extended data provided to this activity
-        // putExtra("contactId", contactIdValue); in MainActivity
-        // will pass contactId here
+        // putExtra("infoId", infoIdValue); in MainActivity
+        // will pass infoId here
 
         String infoId = theIntent.getStringExtra("infoId");
 
@@ -114,7 +114,7 @@ public class EditInfo extends Activity{
         Intent theIntent = getIntent();
         String infoId = theIntent.getStringExtra("infoId");
 
-        // Call for the contact with the contactId provided
+        // Call for the info with the infoId provided
         // to be deleted
 
         dbTools.deleteInfo(infoId);

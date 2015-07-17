@@ -140,7 +140,7 @@ public class DBTools  extends SQLiteOpenHelper {
         return database.update("info", values, "infoId" + " = ?", new String[] { queryValues.get("infoId") });
     }
 
-    // Used to delete a contact with the matching contactId
+    // Used to delete a info with the matching infotId
 
     public void deleteInfo(String id) {
 
@@ -199,7 +199,7 @@ public class DBTools  extends SQLiteOpenHelper {
         }
 
         cursor.close();
-        // return contact list
+        // return info list
         return infoArrayList;
     }
 
